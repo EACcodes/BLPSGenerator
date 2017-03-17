@@ -1,0 +1,37 @@
+# input file for diamond structure
+prtden  0 # don't need to output the charge density.
+occopt  3 # Fermi-Dirac distribution.
+tsmear  0.1 eV # smearing value.
+chkprim 0 # don't check if the unitcell is a primitive cell.
+
+#----------------
+# LATTICE
+#----------------
+ndtset  1 # number of data sets.
+acell  3*4.12    angstrom # basic variables.
+rprim  # lattice constant
+1 0 0
+0 1 0
+0 0 1
+
+ntypat 1 # number of type of atoms
+znucl  11 # nuclear charge.
+natom  2 # number of atoms
+typat  1 1  # which type each atom belongs to 
+xred # atom positions
+ 0    0    0
+ 0.5 0.5 0.5
+
+#----------------
+# K-POINTS
+#----------------
+kptopt   1 # type of k-points
+ngkpt    9 9 9 # number of k-points
+nshiftk  1
+shiftk   0 0 0
+
+ecut     600 eV # energy cutoff
+ixc   11 # PBE
+
+nstep 100 # Maximal number of SCF cycles
+toldfe  1e-5

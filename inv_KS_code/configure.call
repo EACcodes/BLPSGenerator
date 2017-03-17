@@ -1,0 +1,1 @@
+./configure --enable-mpi FC=mpif90 F90=mpif90 F77=mpif90 CC=mpicc --with-linalg-flavor=mkl

@@ -1,0 +1,14 @@
+ECUT 600 #energy cutoff (eV)
+MINI DEN #minmize the cell
+METH ION NON
+METH NTN 
+KINE WGC #kinetic energy functional
+WGCT 2
+
+UNLC 1
+
+CONV 2
+TOLP 1.0e-6
+NNDIST -1
+
+EXCH PBE #echange correlation
